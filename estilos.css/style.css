@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eceaea;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #faa0a0;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Estilo para el contenedor del GIF animado */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #f8eaea;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+/* Ajustes para la estructura de artículo y aside */
+article {
+    flex: 2;
+    margin-right: 20px; /* Espacio entre el artículo y el GIF */
+}
+
+aside {
+    flex: 1;
+    background-color: #e2e2e2;
+    padding: 15px;
+}
+
+/* Asegura que el GIF se vea correctamente */
+.gif-container img {
+    max-width: 20%;
+    height: auto;
+}
+
+/* Ajustes para los iframes */
+aside iframe {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    margin-bottom: 10px;
+}
+
+/* Ajusta el tamaño del reproductor de audio */
+audio {
+    width: 100%;
+}
+
+footer {
+    background-color: #e77d7d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #e7a6a6;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul li a {
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+/* Oculta el menú por defecto */
+.hidden {
+    display: none;
+}
+
+/* Estilo para el botón del menú */
+#menuButton {
+    background-color: #9697df;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para el menú cuando está visible */
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #dd98d4;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Estilo para los elementos del menú */
+#menu li {
+    margin: 0;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #ee92df;
+}
+
+#menu li a:hover {
+    background-color: #444;
+}
