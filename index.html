@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canal de Televisión BM</title>
-    <link rel="stylesheet" href="/estilos.css/style.css">
-    <link rel="icon" href="/img/imgEstrella.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos.css/style.css">
+    <link rel="icon" href="../img/imgEstrella.jpeg" type="image/x-icon">
+    <style>
+        /* CSS interno */
+        /* Ocultar el menú inicialmente */
+        .hidden {
+            display: none;
+        }
+
+        /* Posicionar el botón en la esquina superior izquierda */
+        #menu-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Bienvenido al Canal BM</h1>
         <nav>
-            <button id="menuButton">MENU</button>
+            <button id="menu-button">Ingresar</button>
             <ul id="menu" class="hidden">
                 <li><a href="/cuadros.html/noticia.html">Programas</a></li>
                 <li><a href="/cuadros.html/articulo.html">Artículos</a></li>
@@ -79,14 +93,12 @@
     <footer>
         <p>&copy; 2024 Canal BM. Todos los derechos reservados.</p>
     </footer>
+
     <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
+        // JavaScript para mostrar/ocultar el menú al hacer clic en el botón
+        document.getElementById('menu-button').addEventListener('click', function() {
             var menu = document.getElementById('menu');
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-            } else {
-                menu.classList.add('hidden');
-            }
+            menu.classList.toggle('hidden'); // Alternar la clase 'hidden'
         });
     </script>
 </body>

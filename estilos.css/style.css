@@ -113,7 +113,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff6347;
+    background-color: #ff47a3;
     transform: scale(1.05);
 }
 
@@ -157,4 +157,11 @@ button:hover {
 
 #menu li a:hover {
     background-color: #444;
+}
+/* Añadir este CSS */
+#menu-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 60px; /* Añadir algo de margen si es necesario */
 }
